@@ -1,0 +1,162 @@
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    background-image:linear-gradient(to right bottom, #f4f2f2, #f0eeee);
+}
+
+.header,
+.main {
+    width: 40rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(151, 143, 143);
+    border-radius: 20px 20px 0 0;
+    margin-top: 1.5rem;
+}
+
+.header-link {
+    text-decoration: none;
+    color: #fff;
+    transition: all .2s;
+}
+
+.header-link:hover {
+    color: #333;
+}
+
+.header-logo {
+    font-size: 1.2rem;
+    margin: 0;
+    transition: all .2s;
+}
+
+.header-link:active,
+.header-logo:active {
+    transform: translateY(-2px);
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: inherit;
+    
+}
+
+.form-input {
+    font-family: inherit;
+    border-radius: 6px;
+    resize: none;
+    margin-bottom: 1rem;
+    border: 2px solid rgb(151, 143, 143);
+
+}
+
+.form-button {
+    padding: .3rem 0;
+    font-size: 1rem;
+    border: none;
+    background-color: rgb(151, 143, 143);
+    color: #fff;
+    transition: all .2s;
+    border-radius: 6px;
+    box-shadow: 0 .4rem 0 0 #6b6868;
+    
+}
+.form-button:hover {
+    transform: translateY(.4rem);
+    box-shadow: none;
+}
+
+.form-button:active {
+    background-color: goldenrod;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.dates-link {
+    text-decoration: none;
+    color: inherit;
+    outline: none;
+    padding: .25rem .75rem;
+
+}
+
+.date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all .2s;
+}
+
+.date:hover {
+    color: goldenrod;
+    transform: translateY(-2px);
+}
+.dates-link--current {
+    color: goldenrod;
+}
+
+.habit-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+.habit-name {
+    margin: 0;
+}
+
+.habit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: .5rem;
+    background-color: rgb(146, 140, 140);
+    transition: all .2s;
+}
+
+.habit:not(.completed) {
+    padding: 0;
+}
+
+.habit:hover {
+    background-color: rgba(0,0,0,.3);
+}
+
+.habit-form {
+    width: 100%;
+}
+
+.habit-button {
+    display: block;
+    width: 100%;
+    padding: 1.1rem;
+    font-size: inherit;
+    font-family: inherit;
+    border: none;
+    background-color: unset;
+    cursor: pointer;
+}
+
